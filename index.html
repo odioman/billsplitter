@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Billsplitter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Billsplitter</h1>
+        <form id="form">
+            <h3>What is the total of the bill?</h3>
+            <input type="text" class="total-bill" id="total-bill">
+            <h3>How many people are splitting the bill?</h3>
+            <input type="number" class="number-split" id="number-split">
+            <h3>What percent tip do you want to add?</h3>
+            <input type="text" class="tip-percentage" id="tip-percentage">
+            <button type="submit" class="submit">Calculate</button>
+            <h3>Your share of the bill:</h3>
+            <div class="final-split"></div>
+            <div class="tip-split"></div>
+            <div class="grand-total"></div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
